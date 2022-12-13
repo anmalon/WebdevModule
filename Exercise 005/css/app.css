@@ -1,0 +1,32 @@
+body {
+    margin: 4px;
+    background-color: rgb(43, 54, 75);
+    color: rgb(247, 239, 239);
+    overflow: hidden;
+}
+div {
+    border: 1px solid aliceblue;
+}
+
+.specialRow {
+    background-color: #093cac;
+}
+
+table {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+tr {
+    font-family: Courier;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+}
+
+img {
+    width: 100%;
+}
