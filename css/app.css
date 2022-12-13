@@ -1,46 +1,40 @@
 body {
-    margin: 0px;
-    background-color: rgb(60, 43, 43);
-}
-
-#navigation-menu {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
-#navigation-menu-items:hover > .navigation-menu-item {
-    opacity: 0.35;
-}
-#navigation-menu-items:hover > .navigation-menu-item:hover {
-    opacity: 1;
-}
-.navigation-menu-items{
-    margin-left: clamp(4rem, 20vw, 48rem);
-    position: relative;
-
-}
-.navigation-menu-item {
-    color: white;
-    font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
-
-    display: block;
-    text-decoration: none;
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    transition: opacity 400ms ease;
-}
-
-h1 {
+    margin: 4px;
+    background-color: rgb(43, 54, 75);
     color: rgb(247, 239, 239);
+}
+div {
+    border: 1px solid aliceblue;
+}
+.TestDiv {
+    padding: 10px;
     text-align: center;
     margin-left: 8px;
     font-family: Courier;
+}
+
+#OtherTestDiv {
+    text-align: center;
+    margin-left: 8px;
+    font-family: Courier;
+    color: blueviolet;
+}
+
+h1 {
     font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 p {
     font-family: Courier;
+    font-size: 14px;
+}
+
+a {
+    color: rgb(247, 239, 239);
     font-size: 14px;
 }
 
