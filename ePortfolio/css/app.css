@@ -1,0 +1,40 @@
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #2a1b3d;
+    color: aliceblue;
+    overflow: hidden;
+    font-family: 'Rubik';
+}
+
+#form-container {
+    margin: 3rem auto;
+    padding: 2rem;
+    width: fit-content;
+    border: 1px white;
+    background-color: #44318d;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+form {
+    margin: 3rem 0 0;
+    display: table;
+    align-items: center;
+    margin: auto;
+    text-shadow: 1px 1px 1px #000000;
+}
+input {
+    display: block;
+    float: right;
+    margin: 0 0 0 3rem;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+button {
+    display: inline;
+    float: none;
+    margin: 2rem;
+}
+
+/*#44318d*/
