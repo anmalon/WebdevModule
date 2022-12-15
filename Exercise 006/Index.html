@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!--This section contains the navbar and links to all other pages in the site-->
+    <div id="navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2a1b3d;">
+            <a class="navbar-brand" href="#">Exercise 006</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Index.html" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--This contains the main body of the page, most info should be included here-->
+    <section id="container-body">
+        <div class="body-header" style="text-align: center;">
+            <h1>Transport</h1>
+        </div>
+        <div class="body-content">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./images/imgTrain.png" alt="Train Image">
+                    <div class="card-body">
+                        <h4 class="card-title">Trains</h4>
+                        <p class="card-text">Trains are one of the oldest and most efficient ways to transport things. They can be quite inflexible and are quite capital intensive to setup, but after that they are incredibly energy efficient and both reliable and speedy for transport at the cost of flexibility.</p>
+                        <ul class="list-group list-group-flush">
+                            <lh class="header list-group-item">Advantages</li>
+                            <li class="list-group-item">Energy efficient and reliable transport</li>
+                            <li class="list-group-item">High space utilisation</li>
+                        </ul>
+                        <ul class="disadvantages list-group list-group-flush">
+                            <lh class="header list-group-item">Disadvantages</li>
+                            <li class="list-group-item">Capital intensive upfront</li>
+                            <li class="list-group-item">Very inflexible</li>
+                        </ul>
+                    </div>
+                    </div>
+                <div class="card">
+                    <img class="card-img-top" src="./images/imgPlane.png" alt="Plane Image">
+                    <div class="card-body">
+                        <h4 class="card-title">Planes</h4>
+                        <p class="card-text">Planes are a very capital intensive but flexible form of travel that is used by many companies both for personnel and 
+                            high value goods transport. They are quite costly but are incredibly safe and almost impossible to beat for speed over longer or even medium distances.</p>
+                        <ul class="list-group list-group-flush">
+                            <lh class="header list-group-item">Advantages</li>
+                            <li class="list-group-item">Fast transport to many locations</li>
+                            <li class="list-group-item">High security and safety</li>
+                        </ul>
+                        <ul class="disadvantages list-group list-group-flush">
+                            <lh class="header list-group-item">Disadvantages</li>
+                            <li class="list-group-item">Can be costly</li>
+                            <li class="list-group-item">Only able to take light or high cost/weight goods</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./images/imgCar.png" alt="Car Image">
+                    <div class="card-body">
+                        <h4 class="card-title">Cars</h4>
+                        <p class="card-text">Cars are one of the most common forms of transport in the modern age, with an estimated 1.4 billion on the road 
+                        in 2022. They are a relatively inexpensive form of transport and do not require much investment to get started.</p>
+                        <ul class="list-group list-group-flush">
+                            <lh class="header list-group-item">Advantages</li>
+                            <li class="list-group-item">Very flexible form of transport for short and medium distances</li>
+                            <li class="list-group-item">Allows for freedom and self-reliance</li>
+                        </ul>
+                        <ul class="disadvantages list-group list-group-flush">
+                            <lh class="header list-group-item">Disadvantages</li>
+                            <li class="list-group-item">Very space inefficient</li>
+                            <li class="list-group-item">Major cause of pollution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--This contains the footer, links to external sites can be placed here-->
+    <section id="container-footer">
+        <footer>
+            <a href="./Copyright.html" class="btn btn-secondary btn-sm" role="button" style="margin: 1rem;">Copyright 2022</a>
+            <a href="./Copyright.html" class="btn btn-secondary btn-sm" role="button" style="margin: 1rem;">Privacy Policy</a>
+        </footer>
+    </section>
+</body>
+</html>

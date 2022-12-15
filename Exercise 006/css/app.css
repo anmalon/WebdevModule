@@ -1,0 +1,83 @@
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #44318d;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Rubik';
+}
+
+/* Styling the navbar*/
+#navbar-container {
+    margin: 0 0 4px 0;
+    color: aliceblue;
+}
+.navbar-brand {
+    padding: 0rem 1.5rem;
+}
+div:not(#navbar-container, .collapse) {
+    margin: 2px;
+}
+
+/* Styling the cards*/
+.card-deck {
+    display: flex;
+}
+.card {
+    border-radius: 36px;
+    padding: 1rem 2rem;
+    background-color: #d83f87;
+    color: #fff;
+    width: 33%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    max-width: 125px;
+    max-height: auto;
+}
+
+/* Styling the card's contents*/
+.list-group {
+    margin: 0.75 rem 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.disadvantages {
+    margin: 0.75rem 0 0;
+}
+.list-group-item {
+    font-weight: 100;
+    background-color: #9774E9;
+}
+.header {
+    font-weight: bold;
+}
+
+#container-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+table, tr, td {
+    border: 1px solid white;
+    color: #fff;
+    width: 33%;
+    text-align: center;
+    margin: auto;
+}
+
+#body-text {
+    font-family: 'Courier New', Courier, monospace;
+}
