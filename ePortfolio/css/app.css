@@ -2,10 +2,19 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0px;
-    background-color: #2a1b3d;
+    background-color: #232946;
     color: aliceblue;
     overflow: hidden;
     font-family: 'Rubik';
+}
+
+/* Styling the navbar*/
+#navbar-container {
+    margin: 0 0 4px 0;
+    color: aliceblue;
+}
+.navbar-brand {
+    padding: 0rem 1.5rem;
 }
 
 #form-container {
@@ -13,7 +22,7 @@ body {
     padding: 2rem;
     width: fit-content;
     border: 1px white;
-    background-color: #44318d;
+    background-color: #b8c1ec;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -26,15 +35,17 @@ form {
     text-shadow: 1px 1px 1px #000000;
 }
 input {
+    border-radius: 4px;
     display: block;
     float: right;
     margin: 0 0 0 3rem;
     box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 button {
+    border-radius: 6px;
     display: inline;
     float: none;
     margin: 2rem;
+    background-color: #eebbc3;
+    color: #232946;
 }
-
-/*#44318d*/

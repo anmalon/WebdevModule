@@ -1,0 +1,21 @@
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #232946;
+    color: aliceblue;
+    overflow: hidden;
+    font-family: 'Rubik';
+}
+
+/* Styling the navbar*/
+#navbar-container {
+    margin: 0 0 4px 0;
+    color: aliceblue;
+}
+.navbar-brand {
+    padding: 0rem 1.5rem;
+}
+.nav-item {
+    border-right: 1px aliceblue;
+}
