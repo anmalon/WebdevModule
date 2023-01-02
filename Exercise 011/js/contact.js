@@ -25,13 +25,3 @@ document.getElementById("btnTest").addEventListener("click", function()
 
     alert(`First Name: ${getFirstName} \nSurname: ${getSurName} \nAddress: ${getAddress} \nMobile Number: ${getMobile} \nEmail: ${getEmail}`);
 });
-
-
-/* TODO: Fix JS email validation -- couldn't figure out implementations
-function validateRegex() {
-
-    var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    
-    return regex.test(email);  
-} 
-*/

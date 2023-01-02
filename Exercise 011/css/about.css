@@ -1,0 +1,47 @@
+:root {
+    --border-radius: 4px;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    height: 100vh;
+    overflow: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Styling cards*/
+    /*#card-deck {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;  
+        max-width: 916px;
+        width: calc(100% - 20px);
+    } */
+.info-card {
+    margin: 0.5rem auto;
+    border-radius: var(--border-radius);
+    height: 30vh;
+    width: 80vw;
+    background-color: var(--card-color);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(236, 231, 231, 0.3);
+}
+img {
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    transform: scale(1.01);
+    object-fit: cover;
+    border-radius: var(--border-radius) 0px 0px var(--border-radius); 
+}
+.card-text {
+    align-items: center;
+    margin: auto;
+    float: left;
+    color: var(--dark-text);
+}
+.card-text > h2 {
+    text-decoration: underline;
+}
