@@ -7,7 +7,7 @@
     background-color: var(--light-bg-color);
     color: var(--dark-text);
     border-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(238, 236, 236, 0.3), inset 3px 4px 8px 4px rgba(0,0,0,0.3) ;
 }
 form {
     margin: 3rem 0 0;

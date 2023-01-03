@@ -8,6 +8,7 @@
     --dark-text: #232946;
 }
 
+
 #wrapper {
     background-image: url('../images/bg-image.svg'); /*Background sourced from www.svgbackgrounds.com*/
     background-color: var(--bg-color);

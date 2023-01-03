@@ -22,14 +22,14 @@ body {
 .image-wrapper {
     width: 33%;
     margin: 1rem;
-    
+    padding: 16px;
+    background-color: var(--alt-bg-color);
+    border-radius: 6px;
 }
 
 .image-wrapper > img {
     height: 33%;
     width: 100%;
     object-fit: contain;
-    background-color: var(--alt-bg-color);
-    border-radius: 6px;
     margin: 4px;
 }

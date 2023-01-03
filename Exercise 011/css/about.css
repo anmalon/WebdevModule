@@ -19,7 +19,7 @@ body {
     border-radius: var(--border-radius);
     height: 30vh;
     width: 80vw;
-    background-color: var(--card-color);
+    background-color: var(--light-bg-color);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(236, 231, 231, 0.3);
 }
 img {
