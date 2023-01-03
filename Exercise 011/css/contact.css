@@ -1,3 +1,4 @@
+/*Styling overall form*/
 #form-container {
     margin: 3rem auto;
     padding: 2rem;
@@ -13,15 +14,38 @@ form {
     display: table;
     align-items: center;
     margin: auto;
+    max-width: 1400px;
+    width: 40vw;
+}
+.input-wrapper {
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 4px;
+    max-width: 90%;
+}
+
+/*Styling specific inputs*/
+::placeholder {
+    text-align: center;
 }
 input {
-    border-radius: 4px;
-    display: block;
-    float: right;
-    margin: 0 0 0 2rem;
-    text-align: center;
-    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.15);
+    width: 50%;
+    margin: auto;
 }
+#address, #message {
+    border-radius: 6px;
+    max-width: none;
+    resize: none;
+}
+#message {
+    height: 180px;
+}
+
 /*Styling the button*/
 #button-container {
     display: flex;
@@ -30,6 +54,8 @@ input {
     margin: 2rem 1rem auto;
 }
 button {
+    width: 130px;
+    height: 50px;
     border-radius: 6px;
     background-color: var(--btn-color);
     color: var(--dark-text);

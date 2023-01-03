@@ -1,6 +1,11 @@
 // initialising variables
 let input
 
+window.onload = function() {
+    var div = document.getElementById('contact-form');
+    div.style.top = '100';
+}
+
 document.getElementById("btnSubmit").addEventListener("click", function()
 {  
     input = document.getElementById("firstName").value;
