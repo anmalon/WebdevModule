@@ -12,7 +12,9 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-.vscode
+*.vscode
+**/Report/**
+**/audio/**
 
 # Mono auto generated files
 mono_crash.*
