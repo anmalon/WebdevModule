@@ -8,7 +8,3 @@
     margin: 0 1rem auto;
     justify-content: space-between;
 }
-button:hover {
-    background-color: var(--btn-hover-color);
-    transition: ease 250ms;
-}

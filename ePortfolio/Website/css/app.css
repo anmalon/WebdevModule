@@ -1,39 +1,59 @@
 :root {
-    --bg-color: #232946;
-    --light-bg-color: #b8c1ec;
-    --btn-color: #eebbc3;
-    --btn-hover-color: #bd9097;
-    --card-color: #FFFDD0;
-    --dark-text: #232946;
+    --dark-bg-color: #1A1A1A;
+    --dark-text: #F9F9F9;
+    --dark-footer: #7398A8;
+    --light-bg-color: #F9F9F9;
+    --light-text: #1A1A1A;
+    --navbar-color: #253F4B;
+    --btn-color: #57ACDC;
+    --btn-hover-color: #276880;
+    --form-color: #60C689;
+    --card-color: #5C2165;
 }
 
+/* Styling body */
 body {
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
     margin: 0px;
-    background-color: var(--bg-color);
-    color: aliceblue;
     overflow: hidden;
     font-family: 'Rubik';
+}
+.light-mode {
+    background-color: var(--light-bg-color);
+    color: var(--light-text);
+}
+.light-mode > footer {
+    background-color: var(--dark-footer);
+}
+
+.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text);
+}
+.dark-mode > footer {
+    background-color: var(--dark-footer);
 }
 
 /* Styling the navbar*/
 #navbar-container {
     margin: 0 0 4px 0;
-    color: aliceblue;
+    color: var(--dark-text);
 }
 .navbar-brand {
     padding: 0rem 1.5rem;
 }
 
-/* Styling the main container*/
+/* Styling the form container */
 #form-container {
     margin: 3rem auto;
     padding: 2rem;
+    height: fit-content;
     width: fit-content;
     border: 1px white;
-    background-color: var(--light-bg-color);
-    color: var(--dark-text);
+    background-color: var(--form-color);
+    font-weight: bold;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -51,9 +71,39 @@ input {
     text-align: center;
     box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
+
+/* Styling buttons for the site */
 button {
     border-radius: 6px;
     margin: 2rem;
     background-color: var(--btn-color);
     color: var(--dark-text);
+}
+button:hover {
+    background-color: var(--btn-hover-color);
+    transition: ease 250ms;
+}
+button:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Changing settings for Progress Tracker & Dark Mode Toggle */
+.btnProgress {
+    margin: 0.25rem 1rem;
+}
+
+/* Styling the footer and icons */
+footer {
+    padding: 0.75rem;
+}
+#footer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerIcons {
+    margin: 0.25rem 1.5rem;
+    color: #1A1A1A;
 }

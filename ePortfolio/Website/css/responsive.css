@@ -22,27 +22,45 @@
     grid-column: 1;
     grid-row: 2;
 }
+.item-5 {
+    grid-column: 3;
+    grid-row: 2;
+}
 
 
 /*Setting up the containing divs*/
 .canvas-wrapper {
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--card-color);
     max-width: 800px;
-    max-height: 600px;
     overflow: hidden;
+}
+.canvas-wrapper > .btn-wrapper {
+    margin-top: auto;
 }
 .audio-wrapper {
     display: flex;
     align-items: center;
 }
+.api-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.api-wrapper > #btnRandom {
+    margin: 1rem;
+    width: 50%;
+}
 
 /*Organising individual elements*/
 audio {
     width: 100%;
-    justify-content: center;
 }
 #test-canvas {
+    flex: 1;
     width: 100%;
     height: 100%;
 }
@@ -51,4 +69,8 @@ audio {
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
+}
+#img-wrapper {
+    flex: 1;
+    width: 80%;
 }

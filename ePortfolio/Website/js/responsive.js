@@ -34,3 +34,9 @@ squareButton.addEventListener("click", function() {
     context.fill();
 });
 
+$(document).ready(function(){
+
+    $("#btnRandom").one("click", function() {
+        $("#btnRandom").text("Press Again!");
+    });
+});

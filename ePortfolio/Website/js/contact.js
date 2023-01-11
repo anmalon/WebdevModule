@@ -1,22 +1,68 @@
 // initialising variables
 let input
+const btnSet = document.getElementById("btnSubmit");
+const btnGet = document.getElementById("btnRetrieve");
 
-document.getElementById("btnSubmit").addEventListener("click", function()
+btnGet.disabled = true;
+
+document.getElementById("btnSubmit").addEventListener("click", function(event)
 {  
+    
+    // Validating inputs in JS
     input = document.getElementById("firstName").value;
-    sessionStorage.setItem("firstName", input);
+    if (input === "null" || input === "") {
+        alert("First name must be entered.");
+        return false;
+    }
+    else {
+        sessionStorage.setItem("firstName", input);
+    }
+
     input = document.getElementById("surName").value;
-    sessionStorage.setItem("surName", input);
-    input = document.getElementById("address").value;
-    sessionStorage.setItem("address", input);
+    if (input === "null" || input === "") {
+        alert("Surname must be entered.");
+        return false;
+    }
+    else {
+        sessionStorage.setItem("surName", input);
+    }
+
+    input = document.getElementById("surName").value;
+    if (input === "null" || input === "") {
+        alert("Address must be entered.");
+        return false;
+    }
+    else {
+        sessionStorage.setItem("address", input);
+    }
+
     input = document.getElementById("mobile").value;
-    sessionStorage.setItem("mobile", input);
+    if (input === "null" || input === "") {
+        alert("Mobile number must be entered.");
+        return false;
+    }
+    else {
+        sessionStorage.setItem("mobile", input);
+    }
+    
     input = document.getElementById("email").value;
-    sessionStorage.setItem("email", input);
+    if (input === "null" || input === "" || input.indexOf("@") === -1) {
+        alert("A valid email address must be provided.");
+        return false;
+    }
+    else {
+        sessionStorage.setItem("email", input);
+    }
+
+    // Enabling the retrieval button only after all validation is passed
+    btnGet.disabled = false;
+    
 });
 
-document.getElementById("btnTest").addEventListener("click", function()
+
+document.getElementById("btnRetrieve").addEventListener("click", function()
 {  
+    // returning the values set earlier
     var getFirstName = sessionStorage.getItem("firstName");
     var getSurName = sessionStorage.getItem("surName");
     var getAddress = sessionStorage.getItem("address");
@@ -27,11 +73,23 @@ document.getElementById("btnTest").addEventListener("click", function()
 });
 
 
-/* TODO: Fix JS email validation -- couldn't figure out implementations
-function validateRegex() {
+// NOT WORKING - Couldn't figure out how to get it to work in time
+// const worker = new Worker("worker.js");
 
-    var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    
-    return regex.test(email);  
-} 
-*/
+// document.querySelectorAll('input[type="text"]').forEach(input => {
+//     input.addEventListener('input', () => {
+//         worker.postMessage("start");
+//     });
+// });
+
+// document.getElementById("btnSubmit").addEventListener("click", function() {
+//     worker.postMessage("stop");
+// });
+
+// worker.onmessage= function(e) {
+//     if (e.data === "timeout") {
+//         document.querySelectorAll('input[type="text"]').forEach(input => {
+//         input.value = ""
+//         });
+//     }
+// };
